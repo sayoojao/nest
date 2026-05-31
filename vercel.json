@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/ui_kits/portfolio/", "permanent": false }
+  ]
+}
