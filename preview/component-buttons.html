@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+.hd h3 { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin:0 0 18px 0; }
+.row { display:flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+.lab { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); width: 70px; text-transform: uppercase; letter-spacing: 0.12em; }
+.btn { font-family: 'Manrope', sans-serif; font-size: 14px; font-weight: 500; padding: 12px 22px; border-radius: 6px; border: none; cursor: pointer; transition: all 180ms cubic-bezier(0.22,1,0.36,1); display:inline-flex; align-items: center; gap: 8px; }
+.primary { background: #B6432A; color: #FAF6EE; }
+.primary:hover { background: #9A3520; }
+.secondary { background: transparent; color: #1F1A14; border: 1px solid rgba(31,26,20,0.25); }
+.secondary:hover { background: rgba(31,26,20,0.05); }
+.ghost { background: transparent; color: #B6432A; padding-left: 0; padding-right: 0; border-bottom: 1px solid #B6432A; border-radius: 0; }
+.ghost:hover { opacity: 0.65; }
+.dark { background: #1F1A14; color: #FAF6EE; }
+.dark:hover { background: #332C22; }
+.arrow { display:inline-block; transition: transform 240ms cubic-bezier(0.22,1,0.36,1); }
+.btn:hover .arrow { transform: translateX(3px); }
+</style></head>
+<body><div class="card">
+  <div class="hd"><h3>Buttons</h3></div>
+  <div class="row"><span class="lab">Primary</span><button class="btn primary">Start a project <span class="arrow">→</span></button><button class="btn primary">View</button></div>
+  <div class="row"><span class="lab">Secondary</span><button class="btn secondary">All projects</button><button class="btn secondary">Learn more</button></div>
+  <div class="row"><span class="lab">Inverse</span><button class="btn dark">Get in touch <span class="arrow">→</span></button></div>
+  <div class="row"><span class="lab">Text</span><button class="btn ghost">See the studio <span class="arrow">→</span></button></div>
+</div></body></html>

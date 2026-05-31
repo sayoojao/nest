@@ -1,0 +1,19 @@
+/* Shared card frame — keeps each preview tight */
+@import url('../colors_and_type.css');
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-page);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+}
+.card {
+  padding: 28px 32px;
+  min-height: 100%;
+}
+.row { display: flex; gap: 16px; align-items: center; }
+.col { display: flex; flex-direction: column; gap: 12px; }
+.label { font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-3); }
+.val { font-family: var(--font-mono); font-size: 11px; color: var(--fg-2); }

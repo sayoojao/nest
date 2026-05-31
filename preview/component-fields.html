@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Form fields</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+.hd h3 { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin:0 0 18px 0; }
+.grid { display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.l { font-family: 'Manrope', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-3); }
+input, textarea, select { font-family: 'Manrope', sans-serif; font-size: 15px; padding: 12px 14px; background: transparent; border: none; border-bottom: 1px solid rgba(31,26,20,0.2); color: #1F1A14; outline: none; transition: border-color 240ms; }
+input::placeholder, textarea::placeholder { color: rgba(31,26,20,0.35); }
+input:focus, textarea:focus { border-bottom-color: #B6432A; }
+.fld { padding: 0; }
+.full { grid-column: 1 / -1; }
+textarea { resize: none; min-height: 60px; }
+</style></head>
+<body><div class="card">
+  <div class="hd"><h3>Form fields</h3></div>
+  <div class="grid">
+    <div class="field"><span class="l">Your name</span><input type="text" placeholder="Sayooj"></div>
+    <div class="field"><span class="l">Email</span><input type="email" value="hello@nest.studio"></div>
+    <div class="field full"><span class="l">Tell us about your home</span><textarea placeholder="Plot size, budget range, the feeling you want…"></textarea></div>
+  </div>
+</div></body></html>

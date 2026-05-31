@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Shadows</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+.hd h3 { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin:0 0 24px 0; }
+.row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; padding: 16px 8px 32px; }
+.cell { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.box { width: 90px; height: 90px; background: var(--stucco-50); border-radius: 10px; }
+.box.xs { box-shadow: 0 1px 2px rgba(74,52,31,0.06); }
+.box.sm { box-shadow: 0 2px 8px rgba(74,52,31,0.08); }
+.box.md { box-shadow: 0 8px 24px rgba(74,52,31,0.10); }
+.box.lg { box-shadow: 0 24px 60px -12px rgba(74,52,31,0.20); }
+.box.xl { box-shadow: 0 40px 100px -20px rgba(74,52,31,0.30); }
+.lab { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); }
+.note { margin-top: 0; font-size: 12px; color: var(--fg-3); line-height: 1.5; }
+.note em { color: var(--ink-200); font-style: normal; font-weight: 600; }
+</style></head>
+<body><div class="card">
+  <div class="hd"><h3>Shadows — warm-toned, never gray</h3></div>
+  <div class="row">
+    <div class="cell"><div class="box xs"></div><span class="lab">xs · 1px</span></div>
+    <div class="cell"><div class="box sm"></div><span class="lab">sm · 2/8</span></div>
+    <div class="cell"><div class="box md"></div><span class="lab">md · 8/24</span></div>
+    <div class="cell"><div class="box lg"></div><span class="lab">lg · 24/60</span></div>
+    <div class="cell"><div class="box xl"></div><span class="lab">xl · 40/100</span></div>
+  </div>
+  <div class="note"><em>rgba(74, 52, 31, …)</em> — warm brown tint, so shadows sit in the cream palette without going cold.</div>
+</div></body></html>

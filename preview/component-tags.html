@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Tags & chips</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+.hd h3 { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin:0 0 18px 0; }
+.row { display:flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; align-items: center; }
+.lab { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); width: 80px; text-transform: uppercase; letter-spacing: 0.12em; }
+.chip { font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 500; padding: 6px 14px; border-radius: 999px; }
+.chip.line { background: transparent; border: 1px solid rgba(31,26,20,0.2); color: #1F1A14; }
+.chip.solid { background: #1F1A14; color: #FAF6EE; }
+.chip.accent { background: rgba(182,67,42,0.12); color: #76281A; }
+.chip.foliage { background: rgba(94,126,74,0.18); color: #1F3219; }
+.chip.line:hover { background: rgba(31,26,20,0.05); cursor: pointer; }
+</style></head>
+<body><div class="card">
+  <div class="hd"><h3>Tags & filter chips</h3></div>
+  <div class="row"><span class="lab">Filter</span><span class="chip solid">All work</span><span class="chip line">Residences</span><span class="chip line">Interiors</span><span class="chip line">Landscape</span><span class="chip line">In progress</span></div>
+  <div class="row"><span class="lab">Meta</span><span class="chip accent">Kerala vernacular</span><span class="chip accent">Two-storey</span><span class="chip foliage">Tropical landscape</span></div>
+</div></body></html>

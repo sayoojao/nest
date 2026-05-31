@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="320" height="140">
+  <defs>
+    
+  </defs>
+  <text x="0" y="78" class="word">Nest</text>
+  
+  <circle class="dot" cx="98" cy="26" r="4"></circle>
+  <circle class="dot" cx="110" cy="20" r="2.5"></circle>
+  <circle class="dot" cx="120" cy="30" r="2"></circle>
+  <text x="6" y="116" class="tag">the happy place</text>
+</svg>

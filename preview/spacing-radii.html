@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Radii</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+.hd h3 { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin:0 0 14px 0; }
+.row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.shape { aspect-ratio: 1; background: var(--terracotta-400); display: flex; align-items: flex-end; justify-content: center; padding: 8px; color: white; font-family: var(--font-mono); font-size: 9px; font-weight: 500; }
+.shape.arched { aspect-ratio: 1/1.4; background: var(--wood-300); }
+.lab { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); margin-top: 6px; text-align: center; }
+.cell { display: flex; flex-direction: column; gap: 4px; }
+.note { margin-top: 14px; font-size: 12px; color: var(--fg-3); font-family: var(--font-body); line-height: 1.5; }
+.note em { color: var(--terracotta-500); font-style: normal; font-weight: 600; }
+</style></head>
+<body><div class="card">
+  <div class="hd"><h3>Corner radii</h3></div>
+  <div class="row">
+    <div class="cell"><div class="shape" style="border-radius:2px">2</div><div class="lab">xs</div></div>
+    <div class="cell"><div class="shape" style="border-radius:6px">6</div><div class="lab">sm · buttons</div></div>
+    <div class="cell"><div class="shape" style="border-radius:12px">12</div><div class="lab">md · cards</div></div>
+    <div class="cell"><div class="shape" style="border-radius:20px">20</div><div class="lab">lg · hero</div></div>
+    <div class="cell"><div class="shape" style="border-radius:999px">∞</div><div class="lab">pill · tags</div></div>
+    <div class="cell"><div class="shape arched" style="border-radius: 999px 999px 8px 8px">arch</div><div class="lab">arched★</div></div>
+  </div>
+  <div class="note"><em>★ The arched-window radius</em> is the system's signature shape — use it once per screen on the most important image.</div>
+</div></body></html>

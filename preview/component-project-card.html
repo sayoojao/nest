@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Project card</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+.hd h3 { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin:0 0 14px 0; }
+.row { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.pcard { background: var(--stucco-50); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(74,52,31,0.08); transition: all 360ms cubic-bezier(0.22,1,0.36,1); cursor: pointer; }
+.pcard:hover { box-shadow: 0 24px 60px -12px rgba(74,52,31,0.20); transform: translateY(-2px); }
+.thumb { aspect-ratio: 4/3; background-size: cover; background-position: center; border-radius: 999px 999px 0 0 / 80px 80px 0 0; margin: 14px 14px 0; transition: transform 720ms cubic-bezier(0.22,1,0.36,1); }
+.pcard:hover .thumb { transform: scale(1.02); }
+.meta { padding: 16px 18px 22px; }
+.eye { font-family: 'Manrope'; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #B6432A; }
+.title { font-family: var(--font-display); font-size: 22px; line-height: 1.1; margin: 6px 0 4px; color: #1F1A14; }
+.cap { font-size: 12px; color: var(--fg-3); }
+</style></head>
+<body><div class="card">
+  <div class="hd"><h3>Project card</h3></div>
+  <div class="row">
+    <div class="pcard">
+      <div class="thumb" style="background-image:url(../assets/villa-day-front.jpeg)"></div>
+      <div class="meta"><div class="eye">Residence · 2024</div><div class="title">Olipram</div><div class="cap">2,710 sq.ft. · two floors · sky-lit stair court</div></div>
+    </div>
+    <div class="pcard">
+      <div class="thumb" style="background-image:url(../assets/villa-dusk.jpeg)"></div>
+      <div class="meta"><div class="eye">Residence · 2024</div><div class="title">Olipram, at dusk</div><div class="cap">Warm interior light · arches under terracotta</div></div>
+    </div>
+  </div>
+</div></body></html>

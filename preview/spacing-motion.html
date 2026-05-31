@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Motion</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+.hd h3 { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin:0 0 14px 0; }
+.tracks { display: flex; flex-direction: column; gap: 12px; }
+.tr { display: grid; grid-template-columns: 110px 1fr 80px; gap: 14px; align-items: center; }
+.lab { font-family: var(--font-mono); font-size: 10px; color: var(--fg-3); }
+.dur { font-family: var(--font-mono); font-size: 10px; color: var(--fg-2); text-align: right; }
+.lane { position: relative; height: 26px; background: var(--stucco-200); border-radius: 13px; overflow: hidden; }
+.dot { position: absolute; top: 5px; left: 5px; width: 16px; height: 16px; background: var(--terracotta-500); border-radius: 50%; }
+.lane.fast .dot { animation: slide var(--d, 1.4s) var(--e, ease) infinite alternate; }
+@keyframes slide { from { left: 5px; } to { left: calc(100% - 21px); } }
+.note { margin-top: 16px; font-size: 12px; color: var(--fg-3); line-height: 1.5; }
+.note em { font-style: normal; font-weight: 600; color: var(--ink-200); }
+</style></head>
+<body><div class="card">
+  <div class="hd"><h3>Motion — slow & curtain-like</h3></div>
+  <div class="tracks">
+    <div class="tr"><span class="lab">out-soft</span><div class="lane fast" style="--d:1.4s; --e:cubic-bezier(0.22,1,0.36,1)"><div class="dot"></div></div><span class="dur">primary</span></div>
+    <div class="tr"><span class="lab">in-out</span><div class="lane fast" style="--d:1.4s; --e:cubic-bezier(0.65,0,0.35,1)"><div class="dot"></div></div><span class="dur">snappy</span></div>
+    <div class="tr"><span class="lab">linear</span><div class="lane fast" style="--d:1.4s; --e:linear"><div class="dot"></div></div><span class="dur">marquees</span></div>
+  </div>
+  <div class="note"><em>Durations</em> — 180ms (hover) · 360ms (lift) · 720ms (image reveal) · 1200ms (curtain). Avoid bounce, spring, rotation.</div>
+</div></body></html>
